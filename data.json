@@ -1,0 +1,995 @@
+{
+ "app": {
+  "title": "Мой ритм",
+  "version": "5.1"
+ },
+ "settings": {
+  "water": {
+   "goalMl": 2000,
+   "stepMl": 250
+  },
+  "steps": {
+   "goal": 7000
+  },
+  "reading": {
+   "goalPages": 20,
+   "currentBook": "Атомные привычки",
+   "bookTotalPages": 320,
+   "bookPagesBefore": 84
+  },
+  "sleep": {
+   "bedtimeGoal": "23:30",
+   "minHours": 7,
+   "lowHours": 6
+  },
+  "workout": {
+   "restSec": 90
+  },
+  "recovery": {
+   "lowFeel": 2
+  },
+  "progression": {
+   "deloadPercent": 10,
+   "round": 0.5
+  },
+  "reportWeekday": 0,
+  "syncUrl": "",
+  "demoMode": true
+ },
+ "phrases": [
+  "Маленький шаг — каждый день",
+  "Сильная. Спокойная. Собранная.",
+  "Дисциплина — это забота о себе",
+  "Тело помнит каждую тренировку",
+  "Сегодня — ещё один раунд",
+  "Я выбираю себя",
+  "Медленно, но не останавливаясь",
+  "С Богом — шаг за шагом",
+  "Бог рядом. Я справлюсь",
+  "Благодарю за этот день",
+  "Это никогда не была удача — это был Бог",
+  "Я в руках Бога"
+ ],
+ "schedule": {
+  "1": "boxing",
+  "2": "d1",
+  "3": "boxing",
+  "4": "d2",
+  "5": "rest",
+  "6": "d3",
+  "0": "rest"
+ },
+ "boxing": {
+  "title": "Бокс",
+  "note": "Тренировка до 19:00"
+ },
+ "program": [
+  {
+   "id": "d1",
+   "title": "День 1",
+   "focus": "Ноги и ягодицы",
+   "exercises": [
+    {
+     "id": "hyper",
+     "name": "Гиперэкстензия",
+     "sets": 2,
+     "reps": "15",
+     "warmup": true,
+     "note": "Разминочное, без веса"
+    },
+    {
+     "id": "glute_bridge",
+     "name": "Ягодичный мост",
+     "sets": 3,
+     "reps": "12-15",
+     "target": "fail",
+     "step": 2.5
+    },
+    {
+     "id": "goblet_squat",
+     "name": "Приседания с гантелью",
+     "sets": 2,
+     "reps": "12",
+     "target": "semi",
+     "step": 2
+    },
+    {
+     "id": "kickback",
+     "name": "Махи ногой в блоке",
+     "sets": 3,
+     "reps": "15",
+     "target": "semi",
+     "step": 1,
+     "perSide": true
+    },
+    {
+     "id": "abduction",
+     "name": "Разведение сидя",
+     "sets": 3,
+     "reps": "15",
+     "step": 2.5,
+     "superset": "Суперсет с выпадами"
+    },
+    {
+     "id": "lunges",
+     "name": "Выпады по залу",
+     "sets": 3,
+     "reps": "8-10",
+     "step": 1,
+     "perSide": true,
+     "superset": "Суперсет с разведением",
+     "note": "8–10 шагов на каждую ногу"
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "title": "День 2",
+   "focus": "Спина, плечи, руки",
+   "exercises": [
+    {
+     "id": "arm_circles",
+     "name": "Вращения руками с лёгкими гантелями",
+     "sets": 2,
+     "reps": "20 сек",
+     "warmup": true
+    },
+    {
+     "id": "pushups",
+     "name": "Отжимания с колен",
+     "sets": 2,
+     "reps": "15",
+     "warmup": true,
+     "note": "Подконтрольно"
+    },
+    {
+     "id": "lat_wide",
+     "name": "Вертикальная тяга широким хватом",
+     "sets": 3,
+     "reps": "15",
+     "target": "fail",
+     "step": 2.5
+    },
+    {
+     "id": "lat_narrow",
+     "name": "Вертикальная тяга узким хватом",
+     "sets": 3,
+     "reps": "15",
+     "targets": [
+      "semi",
+      "semi",
+      "fail"
+     ],
+     "step": 2.5,
+     "note": "2 подхода в полуотказ, 3-й в отказ"
+    },
+    {
+     "id": "lat_raise",
+     "name": "Махи",
+     "sets": 3,
+     "reps": "12",
+     "target": "semi",
+     "step": 1
+    },
+    {
+     "id": "front_delt",
+     "name": "Тяга нижнего блока на переднюю дельту",
+     "sets": 3,
+     "reps": "15",
+     "target": "semi",
+     "step": 1
+    },
+    {
+     "id": "triceps",
+     "name": "Трицепс в кроссовере",
+     "sets": 3,
+     "reps": "",
+     "target": "fail",
+     "step": 1,
+     "note": "До отказа, повторы считаешь сама"
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "title": "День 3",
+   "focus": "Ноги",
+   "exercises": [
+    {
+     "id": "warm_d3",
+     "name": "Разминка",
+     "sets": 1,
+     "reps": "",
+     "warmup": true,
+     "note": "Смотреть в группе"
+    },
+    {
+     "id": "leg_ext",
+     "name": "Разгибания сидя",
+     "sets": 2,
+     "reps": "12",
+     "target": "semi",
+     "step": 2.5
+    },
+    {
+     "id": "smith_squat",
+     "name": "Приседания в Смите",
+     "sets": 3,
+     "reps": "10-12",
+     "target": "fail",
+     "step": 2.5
+    },
+    {
+     "id": "rdl",
+     "name": "Румынская тяга",
+     "sets": 3,
+     "reps": "15",
+     "target": "semi",
+     "step": 2.5
+    },
+    {
+     "id": "leg_curl",
+     "name": "Сгибания сидя",
+     "sets": 3,
+     "reps": "12",
+     "target": "fail",
+     "step": 2.5
+    },
+    {
+     "id": "calf",
+     "name": "Подъёмы на икры в тренажёре",
+     "sets": 2,
+     "reps": "15-20",
+     "step": 2.5
+    }
+   ]
+  }
+ ],
+ "cardio": {
+  "title": "Кардио после силовой",
+  "note": "20 минут, дорожка 3–4 км/ч, наклон 5"
+ },
+ "habits": [
+  {
+   "id": "fluto",
+   "group": "Добавки",
+   "title": "Флутофарм",
+   "subtitle": "После завтрака, до 12:00",
+   "icon": "pill"
+  },
+  {
+   "id": "vitamins",
+   "group": "Добавки",
+   "title": "Витамины",
+   "subtitle": "1 раз в день",
+   "icon": "pill"
+  },
+  {
+   "id": "creatine",
+   "group": "Добавки",
+   "title": "Креатин",
+   "subtitle": "1 раз в день",
+   "icon": "scoop"
+  },
+  {
+   "id": "posture",
+   "group": "Тело",
+   "title": "Осанка",
+   "subtitle": "Упражнения для спины",
+   "icon": "stretch"
+  },
+  {
+   "id": "core",
+   "group": "Тело",
+   "title": "Кор",
+   "subtitle": "В силовые дни",
+   "type": "strength",
+   "timesPerWeek": 3,
+   "icon": "core",
+   "note": "Упражнения на мышцы кора"
+  },
+  {
+   "id": "water",
+   "group": "Тело",
+   "title": "Вода",
+   "type": "water",
+   "icon": "drop"
+  },
+  {
+   "id": "steps",
+   "group": "Тело",
+   "title": "Шаги",
+   "type": "steps",
+   "icon": "steps"
+  },
+  {
+   "id": "massage",
+   "group": "Тело",
+   "title": "Массаж",
+   "type": "weekly",
+   "timesPerWeek": 2,
+   "icon": "hand"
+  },
+  {
+   "id": "reading",
+   "group": "Голова и душа",
+   "title": "Чтение",
+   "type": "pages",
+   "icon": "book"
+  },
+  {
+   "id": "gratitude",
+   "group": "Голова и душа",
+   "title": "Благодарность",
+   "subtitle": "Записать в дневник",
+   "icon": "heart"
+  },
+  {
+   "id": "selfprog",
+   "group": "Голова и душа",
+   "title": "Самопрограммирование",
+   "subtitle": "Записать в дневник",
+   "icon": "pen"
+  },
+  {
+   "id": "church",
+   "group": "Голова и душа",
+   "title": "Церковь",
+   "type": "weekday",
+   "weekday": 0,
+   "subtitle": "Воскресенье",
+   "icon": "church"
+  }
+ ],
+ "demo": {
+  "weights": [
+   [
+    -20,
+    66.9
+   ],
+   [
+    -19,
+    66.7
+   ],
+   [
+    -18,
+    66.8
+   ],
+   [
+    -17,
+    66.6
+   ],
+   [
+    -16,
+    66.5
+   ],
+   [
+    -15,
+    66.7
+   ],
+   [
+    -14,
+    66.4
+   ],
+   [
+    -13,
+    66.3
+   ],
+   [
+    -12,
+    66.5
+   ],
+   [
+    -11,
+    66.2
+   ],
+   [
+    -10,
+    66.1
+   ],
+   [
+    -9,
+    66.3
+   ],
+   [
+    -8,
+    66.0
+   ],
+   [
+    -7,
+    65.9
+   ],
+   [
+    -6,
+    66.0
+   ],
+   [
+    -5,
+    65.8
+   ],
+   [
+    -4,
+    65.7
+   ],
+   [
+    -3,
+    65.9
+   ],
+   [
+    -2,
+    65.6
+   ],
+   [
+    -1,
+    65.5
+   ]
+  ],
+  "days": [
+   {
+    "offset": -6,
+    "sleep": [
+     "00:50",
+     "08:10"
+    ],
+    "feel": 3,
+    "fluto": true,
+    "vitamins": true,
+    "creatine": true,
+    "posture": true,
+    "water": 2000,
+    "steps": 8420,
+    "pages": 20,
+    "gratitude": true,
+    "selfprog": true,
+    "workout": "boxing"
+   },
+   {
+    "offset": -5,
+    "sleep": [
+     "00:20",
+     "08:00"
+    ],
+    "feel": 4,
+    "fluto": true,
+    "vitamins": true,
+    "creatine": true,
+    "posture": true,
+    "water": 1750,
+    "steps": 6900,
+    "pages": 12,
+    "gratitude": true,
+    "workout": "d2",
+    "cardio": true,
+    "core": true
+   },
+   {
+    "offset": -4,
+    "sleep": [
+     "23:50",
+     "08:00"
+    ],
+    "feel": 4,
+    "fluto": true,
+    "vitamins": true,
+    "creatine": false,
+    "posture": false,
+    "water": 2000,
+    "steps": 7400,
+    "pages": 22,
+    "gratitude": true,
+    "selfprog": true,
+    "workout": "rest",
+    "massage": true
+   },
+   {
+    "offset": -3,
+    "sleep": [
+     "01:30",
+     "08:00"
+    ],
+    "feel": 2,
+    "fluto": true,
+    "vitamins": true,
+    "creatine": true,
+    "posture": true,
+    "water": 1500,
+    "steps": 9100,
+    "pages": 5,
+    "workout": "d3",
+    "cardio": true,
+    "core": true
+   },
+   {
+    "offset": -2,
+    "sleep": [
+     "23:40",
+     "08:30"
+    ],
+    "feel": 5,
+    "fluto": true,
+    "vitamins": true,
+    "creatine": true,
+    "posture": true,
+    "water": 2000,
+    "steps": 7200,
+    "pages": 28,
+    "gratitude": true,
+    "selfprog": true,
+    "church": true,
+    "workout": "rest"
+   },
+   {
+    "offset": -1,
+    "sleep": [
+     "23:20",
+     "08:00"
+    ],
+    "feel": 4,
+    "fluto": true,
+    "vitamins": true,
+    "creatine": true,
+    "posture": true,
+    "water": 2000,
+    "steps": 8800,
+    "pages": 20,
+    "gratitude": true,
+    "selfprog": true,
+    "workout": "boxing"
+   }
+  ],
+  "sessions": [
+   {
+    "offset": -14,
+    "day": "d1",
+    "sets": {
+     "glute_bridge": [
+      [
+       37.5,
+       15,
+       1
+      ],
+      [
+       37.5,
+       15,
+       0
+      ],
+      [
+       37.5,
+       13,
+       0
+      ]
+     ],
+     "goblet_squat": [
+      [
+       10,
+       12,
+       3
+      ],
+      [
+       10,
+       12,
+       3
+      ]
+     ],
+     "kickback": [
+      [
+       10,
+       15,
+       2
+      ],
+      [
+       10,
+       15,
+       1
+      ],
+      [
+       10,
+       15,
+       1
+      ]
+     ],
+     "abduction": [
+      [
+       30,
+       15,
+       2
+      ],
+      [
+       30,
+       15,
+       2
+      ],
+      [
+       30,
+       15,
+       1
+      ]
+     ],
+     "lunges": [
+      [
+       4,
+       10,
+       2
+      ],
+      [
+       4,
+       10,
+       2
+      ],
+      [
+       4,
+       9,
+       1
+      ]
+     ]
+    }
+   },
+   {
+    "offset": -10,
+    "day": "d3",
+    "sets": {
+     "leg_ext": [
+      [
+       25,
+       12,
+       2
+      ],
+      [
+       25,
+       12,
+       1
+      ]
+     ],
+     "smith_squat": [
+      [
+       30,
+       10,
+       0
+      ],
+      [
+       30,
+       9,
+       0
+      ],
+      [
+       30,
+       8,
+       0
+      ]
+     ],
+     "rdl": [
+      [
+       25,
+       15,
+       2
+      ],
+      [
+       25,
+       15,
+       2
+      ],
+      [
+       25,
+       15,
+       1
+      ]
+     ],
+     "leg_curl": [
+      [
+       20,
+       12,
+       0
+      ],
+      [
+       20,
+       11,
+       0
+      ],
+      [
+       20,
+       10,
+       0
+      ]
+     ],
+     "calf": [
+      [
+       40,
+       20,
+       2
+      ],
+      [
+       40,
+       18,
+       1
+      ]
+     ]
+    }
+   },
+   {
+    "offset": -7,
+    "day": "d1",
+    "sets": {
+     "glute_bridge": [
+      [
+       40,
+       15,
+       0
+      ],
+      [
+       40,
+       15,
+       0
+      ],
+      [
+       40,
+       15,
+       0
+      ]
+     ],
+     "goblet_squat": [
+      [
+       12,
+       12,
+       3
+      ],
+      [
+       12,
+       12,
+       3
+      ]
+     ],
+     "kickback": [
+      [
+       11,
+       15,
+       1
+      ],
+      [
+       11,
+       14,
+       0
+      ],
+      [
+       11,
+       13,
+       0
+      ]
+     ],
+     "abduction": [
+      [
+       32.5,
+       15,
+       2
+      ],
+      [
+       32.5,
+       15,
+       1
+      ],
+      [
+       32.5,
+       15,
+       1
+      ]
+     ],
+     "lunges": [
+      [
+       4,
+       10,
+       3
+      ],
+      [
+       4,
+       10,
+       3
+      ],
+      [
+       4,
+       10,
+       3
+      ]
+     ]
+    }
+   },
+   {
+    "offset": -5,
+    "day": "d2",
+    "sets": {
+     "lat_wide": [
+      [
+       30,
+       15,
+       0
+      ],
+      [
+       30,
+       13,
+       0
+      ],
+      [
+       30,
+       12,
+       0
+      ]
+     ],
+     "lat_narrow": [
+      [
+       27.5,
+       15,
+       2
+      ],
+      [
+       27.5,
+       15,
+       1
+      ],
+      [
+       27.5,
+       15,
+       0
+      ]
+     ],
+     "lat_raise": [
+      [
+       4,
+       12,
+       3
+      ],
+      [
+       4,
+       12,
+       3
+      ],
+      [
+       4,
+       12,
+       3
+      ]
+     ],
+     "front_delt": [
+      [
+       5,
+       15,
+       2
+      ],
+      [
+       5,
+       15,
+       1
+      ],
+      [
+       5,
+       14,
+       1
+      ]
+     ],
+     "triceps": [
+      [
+       10,
+       14,
+       0
+      ],
+      [
+       10,
+       12,
+       0
+      ],
+      [
+       10,
+       11,
+       0
+      ]
+     ]
+    }
+   },
+   {
+    "offset": -3,
+    "day": "d3",
+    "sets": {
+     "leg_ext": [
+      [
+       25,
+       12,
+       3
+      ],
+      [
+       25,
+       12,
+       3
+      ]
+     ],
+     "smith_squat": [
+      [
+       30,
+       10,
+       0
+      ],
+      [
+       30,
+       9,
+       0
+      ],
+      [
+       30,
+       9,
+       0
+      ]
+     ],
+     "rdl": [
+      [
+       27.5,
+       15,
+       2
+      ],
+      [
+       27.5,
+       15,
+       2
+      ],
+      [
+       27.5,
+       15,
+       2
+      ]
+     ],
+     "leg_curl": [
+      [
+       20,
+       12,
+       0
+      ],
+      [
+       20,
+       12,
+       0
+      ],
+      [
+       20,
+       12,
+       0
+      ]
+     ],
+     "calf": [
+      [
+       40,
+       20,
+       1
+      ],
+      [
+       40,
+       20,
+       1
+      ]
+     ]
+    }
+   }
+  ],
+  "measurements": [
+   {
+    "offset": -16,
+    "weight": 66.5,
+    "chest": 90,
+    "waist": 72,
+    "hips": 99
+   },
+   {
+    "offset": -9,
+    "weight": 66.3,
+    "chest": 90,
+    "waist": 71,
+    "hips": 98.5
+   },
+   {
+    "offset": -2,
+    "weight": 65.6,
+    "chest": 89.5,
+    "waist": 70,
+    "hips": 98
+   }
+  ],
+  "today": {
+   "fluto": true,
+   "water": 750
+  }
+ }
+}
